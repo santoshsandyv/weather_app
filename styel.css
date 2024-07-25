@@ -1,0 +1,99 @@
+/* stylesheet.css */
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s;
+}
+
+.container:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.container * {
+    box-sizing: border-box;
+}
+
+h1 {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+button,
+.weather-card {
+    width: 90%;
+    padding: 15px;
+    margin: 15px auto;
+}
+
+input[type="text"] {
+    background: #f7f7f7;
+    border: thin solid #ddd;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: 0.2s all ease-in-out;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.weather-card {
+    background-color: #007BFF;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.weather-card h2 {
+    margin-top: 0;
+}
+
+.weather-card p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.ng-enter,
+.ng-leave {
+    transition: all 0.4s ease-in-out;
+}
+
+.ng-enter:not(.ng-enter-active),
+.ng-leave:not(.ng-leave-active) {
+    display: none;
+}
